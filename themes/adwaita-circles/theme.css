@@ -18,8 +18,8 @@
   /* Labels */
   --label-height: 34px;
   /* Grandchildren */
-  --grandchild-size: 32px;
-  --grandchild-distance: 0px;
+  --grandchild-size: 16px;
+  --grandchild-distance: 25px;
   /* Connector */
   --connector-width: 6px;
   /* Transitions */
@@ -146,8 +146,9 @@
     left: calc(-0.50 * var(--grandchild-size));
     width: var(--grandchild-size);
     height: var(--grandchild-size);
-    box-shadow: none;
-    background-color: transparent ;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+    background-color: var(--border-color);
+    opacity: 90%;
   }
 
   /* When the center is hovered, set the color of the parent too */
@@ -166,7 +167,8 @@
   /* Show the icons of the parent and child items. */
   &.active>.icon-layer>.icon-container,
   &.parent>.icon-layer>.icon-container,
-  &.child>.icon-layer>.icon-container {
+  &.child>.icon-layer>.icon-container,
+  &.grandchild>.icon-layer>.icon-container {
     transition: var(--menu-transition);
     opacity: 1;
   }
@@ -210,4 +212,3 @@
 .center-text {
   display: none;
 }
-
