@@ -18,8 +18,8 @@
   /* Labels */
   --label-height: 34px;
   /* Grandchildren */
-  --grandchild-size: 16px;
-  --grandchild-distance: 25px;
+  --grandchild-size: 25px;
+  --grandchild-distance: 30px;
   /* Connector */
   --connector-width: 6px;
   /* Transitions */
